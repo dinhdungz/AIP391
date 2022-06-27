@@ -2,14 +2,14 @@
 This is the overview of the UI
 
 
-![alt text](images/Main_UI.png)
+![alt text](FR1.jpg)
 
 The project is divided into the following sections:
-1. Generating Training data/ Students pic and enrolling them in MongoDB database in all the collections(Hindi and English)_and a CSV file named Students Enrollment
+1. Generating Training data/ Students pic and enrolling them in MongoDB database in all the collections a CSV file named Students Enrollment
 2. Once the required dataset is generated the model is trained which comprises of several layers with softmax in the output layer** (I have not used any regularization as such as the model was giving good response in normal lightning conditions however it can be used if we have too many classes/students)
 3. The user can then select the required lecture (English and Hindi) and check the existing attendance 
 4. The user can then take the attendance by clicking on the required button. It takes approximately 15 seconds to start the attendance window. (The attendance is stored in MongoDB database and separate collections are created for English and Hindi classes to avoid overlaps)
-![alt text](images/17.png)
+![alt text](FR2.jpg)
 
 
 # - **Prequisites:**
@@ -24,7 +24,7 @@ Install the packages mentioned in Requirements folder depending on CPU/ GPU base
 Step 1: Run Python3 UI.py <br/>
 Step 2: Once the UI is up and running, start with the right-hand section for new enrollments(Students entered are enrolled in both the subjects(Collections in MongoDB) with 0 Attendance)
 
-![alt text](images/1.png)
+![alt text](FR2.jpg))
 
 Step 3: Clik on the Take Images button, A new window (frame) should open and clicks 50 images of the detected face<br/>
 Step 4: Once the students are enrolled, you can check the attendance in the Students_Enrollment.CSV<br/>
@@ -70,12 +70,12 @@ Diving deep into the process:
 	1. Input layer 128 Neurons followed by Relu Activation
 	2. 3 Hidden layers with 64, 32 and 16 neurons respectively
 	3. Output Layer with Softmax Activation<br/>
-![alt text](images/10.png)<br/>
+![alt text](FR3.jpg)<br/>
 9. The model takes around 30-40 seconds for training and saved as "Face_recoginition. Model" in the Model directory<br/>
 
 # - **Face Recognition/ Take Attendance**
 1. On clicking the class (Hindi/English) Radiobutton, you can click on Take attendance
-![alt text](images/12.png)<br/>
+![alt text](FR4.jpg)<br/>
 
 2. The control is shifted to Recognition() function in Recognizer.py
 3. The labels are created in a dictionary with value 0 for all the names of students(names are extracted from people folder)
