@@ -8,7 +8,6 @@ The project is divided into the following sections:
 1. Generating Training data/ Students pic and enrolling them in MongoDB database in all the collections a CSV file named Students Enrollment
 2. Once the required dataset is generated the model is trained which comprises of several layers with softmax in the output layer
 3. The user can then take the attendance by clicking on the required button. It takes approximately 15 seconds to start the attendance window. 
-![alt text](FR2.jpg)
 
 
 # - **Prequisites:**
@@ -23,7 +22,7 @@ Install the packages mentioned in Requirements folder depending on CPU/ GPU base
 Step 1: Run Python3 UI.py <br/>
 Step 2: Once the UI is up and running, start with the right-hand section for new enrollments
 
-![alt text](FR3.jpg))
+![alt text](FR2.jpg))
 
 Step 3: Clik on the Take Images button, A new window (frame) should open and clicks 30 images of the detected face<br/>
 Step 4: Once the students are enrolled, you can check the attendance in the Students_Enrollment.CSV<br/>
