@@ -22,7 +22,7 @@ Install the packages mentioned in Requirements folder depending on CPU/ GPU base
 Step 1: Run Python3 UI.py <br/>
 Step 2: Once the UI is up and running, start with the right-hand section for new enrollments
 
-![alt text](FR2.jpg))
+![alt text](FR3.jpg))
 
 Step 3: Clik on the Take Images button, A new window (frame) should open and clicks 30 images of the detected face<br/>
 Step 4: Once the students are enrolled, you can check the attendance in the Students_Enrollment.CSV<br/>
