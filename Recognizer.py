@@ -99,7 +99,6 @@ def Recognition():
                         cv2.rectangle(frame, (k[0], k[1]), (k[0] + k[2], k[1] + k[3]), (255, 0, 0), 3)
                 except:
                     pass
-         #hiển thị cái cũ nhất
         cv2.imshow('Say Hi and Press "q" to Quite', frame)
         if (cv2.waitKey(1) & 0XFF == ord('q')):
             break
