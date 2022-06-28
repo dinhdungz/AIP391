@@ -115,19 +115,6 @@ frame2.place(relx=0.59, rely=0.21, relwidth=0.35, relheight=0.78)
 head2 = tk.Label(frame2, text="                       For New Enrollment                       ", fg="white",bg="#8a2e7f" ,font=('Helvetica', 17, ' bold ') )
 head2.grid(row=0,column=0)
 
-
-
-
-#frame3 = tk.Frame(window, bg="#c4c6ce")
-#frame3.place(relx=0.52, rely=0.09, relwidth=0.09, relheight=0.07)
-
-
-
-
-# clock = tk.Label(frame3,fg="orange",bg="#262523" ,width=55 ,height=1,font=('times', 22, ' bold '))
-# clock.pack(fill='both',expand=1)
-# tick()
-
 ##################################################LEFT SIDE###################################################################################################3
 
 lbl = tk.Label(frame2, text="Enter Roll Number",width=20  ,height=1  ,fg="white"  ,bg="#8a2e7f" ,font=('Helvetica', 13, ' bold ') )
@@ -141,10 +128,6 @@ lbl2.place(relx=0.3, rely=0.27)
 
 txt2 = tk.Entry(frame2,width=20 ,fg="black",font=('Helvetica', 13)  )
 txt2.place(relx=0.3, rely=0.33)
-
-#message1 = tk.Label(frame2, text="1)Take Images  >>>  2)Save Profile" ,bg="#00aeff" ,fg="black"  ,width=39 ,height=1, activebackground = "yellow" ,font=('times', 15, ' bold '))
-#message1.place(x=7, y=230)
-
 
 def get_data():
   Name=txt2.get()
@@ -192,37 +175,6 @@ trainImg.place(x=37, y=350)
 progress = Progressbar(frame2,length=200,orient = HORIZONTAL, mode='determinate')
 progress.place(x=150,y=435)
 
-##################RIGHT SIDE################################################################################################
-#message = tk.Label(frame2, text="" ,bg="#00aeff" ,fg="black"  ,width=39,height=1, activebackground = "yellow" ,font=('times', 16, ' bold '))
-#message.place(x=7, y=450)
-
-
-
-# lbl3 = tk.Label(frame1, text="Select Class",width=20,fg="white",bg="#8a2e7f"  ,height=1 ,font=('Helvetica', 13, ' bold '))
-# lbl3.place(x=140, y=50)
-
-# takeImg = tk.Button(frame1, text="Hindi" ,fg="white"  ,bg="#8a2e7f"  ,width=10  ,height=1, activebackground = "white" ,font=('Helvetica', 13, ' bold '))
-# takeImg.place(x=70, y=110)
-
-# takeImg = tk.Button(frame1, text="English" ,fg="white"  ,bg="#8a2e7f"  ,width=10  ,height=1, activebackground = "white" ,font=('Helvetica', 13, ' bold '))
-# takeImg.place(x=270, y=110)
-
-
-##############################RADIO BUTTONS##########################################################
-# v = tk.IntVar()
-# v.set(1)
-# selection=0
-# def ShowChoice():
-#     global selection
-#     selection=v.get()
-  
-
-# first=tk.Radiobutton(frame1, text="Hindi", variable=v, command=ShowChoice,
-#               value=1,bg="#ffffff",activeforeground="#507d2a",borderwidth=10,font=('Helvetica', 14, ' bold ')).place(x=130, y=110,anchor=CENTER)
-#
-# second=tk.Radiobutton(frame1, text="English", variable=v, command=ShowChoice,
-#               value=2,bg="#ffffff",activeforeground="#507d2a",borderwidth=10,font=('Helvetica', 14, ' bold ')).place(x=260, y=88)
-
 
 ###########################################################################################################################
 
@@ -237,18 +189,6 @@ trackImg.place(x=35,y=150)
 
 
 ###############################QUIT###########################################################################################
-
-# res=0
-
-
-
-
-
-
-
-
-
-
 
 tv= Treeview(frame1,columns =('Id','name','Time'),selectmode='browse',show=["headings"])
 tv.column('Id',width=155,anchor=tk.CENTER)
